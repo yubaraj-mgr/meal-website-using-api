@@ -1,5 +1,5 @@
 const row = document.querySelector(".row");
-const button = document.querySelector(".btn");
+const button = document.querySelector(".button");
 const inputValue = document.querySelector(".input");
 const container = document.querySelector(".container");
 
@@ -24,9 +24,10 @@ const fetchImageApi = (e) => {
         </div>`;
         });
       } else {
-        html = `We don't have ${inputValue.value.trim()} at the moment`;
+        html = `<h1 class = "noValue">Sorry, we don't have &nbsp <span class = "inputValue">${inputValue.value.trim()}</span> &nbsp at the moment</h1>`;
       }
       row.innerHTML = html;
+      inputValue.value = "";
     });
 };
 

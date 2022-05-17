@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .wrapper {
@@ -15,27 +16,30 @@ body {
 }
 
 .wrapper2 {
-  display: flex;
   width: 40vw;
+  background-color: rgba(15, 14, 14, 0.18);
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
 }
 
 .input {
-  height: 3rem;
-  width: 80%;
-  background-color: orange;
-  border-radius: 15px;
-  border: 3px solid white;
+  width: 87%;
+  background: transparent;
+  border: 0;
+  outline: none; /* even if i click on it it does not have black border */
+  padding: 20px 16px;
+  font-size: 20px;
+  color: black;
 }
 
-.btn {
-  position: relative;
-  top: -1.5rem;
-  left: -1rem;
-  height: 3rem;
-  width: 20%;
-  background-color: orange;
+.button {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
   color: white;
-  border-radius: 15px;
+  background-color: rgba(53, 52, 52, 0.507);
+  border: 0;
 }
 
 .myContainer {
@@ -58,4 +62,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.noValue {
+  display: flex;
+  justify-content: center;
+  color: rgb(83, 12, 74);
+}
+
+.inputValue {
+  font-weight: bold;
+  color: red;
+  border-bottom: 3px solid black;
 }
